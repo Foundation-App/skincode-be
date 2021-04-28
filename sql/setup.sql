@@ -15,7 +15,12 @@ CREATE TABLE users (
 CREATE TABLE favorites (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   username BIGINT REFERENCES users(id),
-  makeup_name TEXT NOT NULL
+  makeup_name TEXT NOT NULL,
+  image_link TEXT NOT NULL,
+  brand TEXT NOT NULL,
+  color TEXT NOT NULL,
+  hex TEXT NOT NULL,
+  product_link TEXT NOT NULL
 );
 
 CREATE TABLE cloudinary (
