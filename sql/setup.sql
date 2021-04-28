@@ -20,7 +20,8 @@ CREATE TABLE favorites (
   brand TEXT NOT NULL,
   color TEXT NOT NULL,
   hex TEXT NOT NULL,
-  product_link TEXT NOT NULL
+  product_link TEXT NOT NULL,
+  date_added TEXT NOT NULL
 );
 
 CREATE TABLE cloudinary (
