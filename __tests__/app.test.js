@@ -5,9 +5,6 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 const User = require('../lib/models/user');
-// const tokenService = require('../lib/utils/token-utils')
-// import jwt from 'jsonwebtoken';
-// jest.mock(jwt);
 
 describe('skincode-be routes', () => {
   beforeEach(() => {
@@ -16,6 +13,7 @@ describe('skincode-be routes', () => {
 
   const agent = request.agent(app);
   // for other routes do in before each
+
   let user;
   beforeEach(() => {
     return agent
