@@ -1,3 +1,5 @@
+require('dotenv').config();
+require('./lib/client').connect();
 const app = require('./lib/app');
 const pool = require('./lib/utils/pool');
 
@@ -13,3 +15,4 @@ process.on('exit', () => {
   console.log('Goodbye!');
   pool.end();
 });
+
